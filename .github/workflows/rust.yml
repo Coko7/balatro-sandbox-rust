@@ -17,7 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Enter work env
-      run: cd balatro-core
+      run: |
+        echo $(pwd)
+        cd balatro-core
     - name: Build
       run: cargo build --verbose
     - name: Run tests
