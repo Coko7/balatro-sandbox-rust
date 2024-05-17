@@ -2,7 +2,7 @@ name: Rust
 
 on:
   push:
-    branches: [ "main", "fix-broken-pipeline-yml" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
