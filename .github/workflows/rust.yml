@@ -14,13 +14,12 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: balatro-core
+
     steps:
     - uses: actions/checkout@v4
-    - name: Enter work env
-      run: |
-        echo $(pwd)
-        cd balatro-core/
-        echo $(pwd)
     - name: Build
       run: cargo build --verbose
     - name: Run tests
