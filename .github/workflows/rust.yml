@@ -19,7 +19,8 @@ jobs:
     - name: Enter work env
       run: |
         echo $(pwd)
-        cd balatro-core
+        cd balatro-core/
+        echo $(pwd)
     - name: Build
       run: cargo build --verbose
     - name: Run tests
